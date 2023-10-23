@@ -8,13 +8,13 @@ app.use(cors());
 app.use(cookieParser());
 
 // Set the port you want to use
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3005;
 // for local
 // mongodb://0.0.0.0:27017/taskmanager
 
 // for cloud
 // mongodb+srv://nileshp:Nileshhh@cluster0.cwmozw9.mongodb.net/Cluster0?retryWrites=true&w=majority
-mongoose.connect('mongodb://0.0.0.0:27017/taskmanager', {
+mongoose.connect('mongodb+srv://nileshp:Nileshhh@cluster0.cwmozw9.mongodb.net/Cluster0?retryWrites=true&w=majority', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
